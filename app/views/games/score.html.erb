@@ -1,2 +1,16 @@
 <h1>ESTO ES SCORE</h1>
 <a href="http://localhost:3000">NEW GAME page</a> 
+<%=@letters%>
+<%= @word%>
+<%=@include%>
+<%=@call_api%>
+
+
+ <% if @call_api = true %>
+   <%= resultado_dos = "good_por_dos"  %>
+ <% end %>
+ 
+<% if @include = true%>
+    <%= resultado = "good" %>
+  <% else resultado = "bad"%>
+<% end %>
